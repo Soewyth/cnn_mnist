@@ -1,0 +1,38 @@
+# Datasets
+datasets/raw/
+datasets/processed/
+
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# IDE / OS
+.vscode/
+.DS_Store
+*.log
+
+# Python cache
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# ML artifacts
+outputs/models/
+outputs/figures/
+*.pt
+*.pth
+*.ckpt
+wandb/
+mlruns/
+
+# IDE extras
+.idea/
