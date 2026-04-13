@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "cnn_mnist"
 version = "0.1.0"
 description = "CNN MNIST - DL Learning with PyTorch"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -18,7 +18,7 @@ include = ["cnn_mnist*"]
 
 [tool.ruff]
 line-length = 150
-target-version = "py312"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
@@ -26,3 +26,6 @@ select = ["E", "F", "I"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

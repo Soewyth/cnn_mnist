@@ -10,5 +10,5 @@ training:
   optimizer: "adam"
 
 paths:
-  model_dir: outputs/models
-  figure_dir: outputs/figures
+  models_dir: outputs/models
+  figures_dir: outputs/figures
