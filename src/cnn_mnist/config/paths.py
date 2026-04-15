@@ -19,6 +19,7 @@ def get_paths(root_dir: Path) -> dict:
         "models": root_dir / "outputs" / "models",
         "data_raw": root_dir / "data" / "raw",
         "data_processed": root_dir / "data" / "processed",
+
     }
 
     for _, path in paths.items():
