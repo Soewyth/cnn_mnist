@@ -20,6 +20,8 @@ test:
 lint: 
 	.venv/bin/ruff check . && .venv/bin/ruff format --check .
 
+explore:
+	.venv/bin/python scripts/00_explore_data.py
 train:
 	.venv/bin/python scripts/01_train.py
 

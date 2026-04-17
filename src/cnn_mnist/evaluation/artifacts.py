@@ -1,7 +1,7 @@
 import json
+from pathlib import Path
 
 import torch
-from pathlib import Path
 
 
 def save_model(model: torch.nn.Module, save_path: Path) -> None:

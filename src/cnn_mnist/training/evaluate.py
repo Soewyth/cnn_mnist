@@ -30,9 +30,7 @@ def evaluate(
             total_loss += loss.item()
 
             preds = torch.argmax(logits, dim=1)  # take the class with max value
-            correct += (
-                (preds == labels).sum().item()
-            )  # item to get the value from the tensor
+            correct += (preds == labels).sum().item()  # item to get the value from the tensor
     average_loss = total_loss / len(dataloader)  # average loss per batch
-    accuracy = correct / len(dataloader.dataset) # correct predictions / total samples
+    accuracy = correct / len(dataloader.dataset)  # correct predictions / total samples
     return average_loss, accuracy

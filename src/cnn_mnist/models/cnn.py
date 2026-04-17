@@ -13,13 +13,9 @@ class SimpleCNN(nn.Module):
         self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
-        x = self.pool(
-            F.relu(self.conv1(x))
-        )  # conv -> relu -> pool : 1x28x28 -> 16x28x28 -> 16x14x14
-        x = self.pool(
-            F.relu(self.conv2(x))
-        )  # conv -> relu -> pool :  16x14x14 -> 32x14x14 -> 32x7x7
+        x = self.pool(F.relu(self.conv1(x)))  # conv -> relu -> pool : 1x28x28 -> 16x28x28 -> 16x14x14
+        x = self.pool(F.relu(self.conv2(x)))  # conv -> relu -> pool :  16x14x14 -> 32x14x14 -> 32x7x7
         x = torch.flatten(x, 1)  # flatten : 32x7x7 -> 1568
         x = F.relu(self.fc1(x))
-        x = self.fc2(x) # logits
+        x = self.fc2(x)  # logits
         return x
