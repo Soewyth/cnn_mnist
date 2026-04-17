@@ -33,5 +33,5 @@ def plot_training_curves(
     fig.tight_layout()
 
     # Save figure
-    plt.savefig(save_path)
+    fig.savefig(save_path)
     plt.close(fig)
