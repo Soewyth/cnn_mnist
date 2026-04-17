@@ -21,7 +21,7 @@ lint:
 	.venv/bin/ruff check . && .venv/bin/ruff format --check .
 
 train:
-	.venv/bin/python -m cnn_mnist.train
+	.venv/bin/python scripts/01_train.py
 
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} +

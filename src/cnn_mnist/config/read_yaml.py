@@ -1,5 +1,6 @@
 import yaml
 
+
 def read_config_yaml(config_path):
     """Read the configuration file in yaml format
     and return a dictionary of the configuration parameters

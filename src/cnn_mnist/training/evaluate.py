@@ -1,5 +1,5 @@
-from torch import nn
 import torch
+from torch import nn
 
 
 def evaluate(
@@ -35,4 +35,4 @@ def evaluate(
             )  # item to get the value from the tensor
     average_loss = total_loss / len(dataloader)  # average loss per batch
     accuracy = correct / len(dataloader.dataset) # correct predictions / total samples
-    return accuracy, average_loss
+    return average_loss, accuracy
