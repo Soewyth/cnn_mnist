@@ -2,6 +2,12 @@
 
 A simple Convolutional Neural Network trained on the MNIST handwritten digit dataset.
 
+## What this project demonstrates
+
+- CNN training from scratch on grayscale images (MNIST) with stable convergence
+- Data augmentation pipeline integrated into reproducible training loop
+- Structured DL project layout (notebooks/, src/, outputs/)
+
 ## Architecture
 
 - 2 convolutional layers (Conv → ReLU → MaxPool)
